@@ -6,8 +6,32 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
 </head>
 <body>
   <app-root></app-root>
 </body>
+
+<script src="output/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="objetos.js"></script>
+
+<script>
+
+    function foo() {
+        var undefined = 2; // bad idea!
+        console.log(undefined);
+        var newDiv =document.createElement("div");
+        var newContent = document.createTextNode("Hola! ¿Qué tal?");
+        newDiv.appendchild(newcontent); // añade texto al div creado
+    // añade el elemento creado y su contenido al DOM
+        var currentDiv = document.getElemetnById("1");
+        document.body.inserBefore(newDiv, currentDiv);
+    }
+    
+    foo();
+    
+    </script>
+
 </html>
