@@ -6,16 +6,24 @@ import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { HttpClientModule }from '@angular/common/http';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { BarraNavegacionComponent } from './componentes/barra-navegacion/barra-navegacion.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { HysComponent } from './componentes/hys/hys.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncabezadoComponent,
-    AcercaDeComponent
+    AcercaDeComponent,
+    BarraNavegacionComponent,
+    EducacionComponent,
+    HysComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent],
