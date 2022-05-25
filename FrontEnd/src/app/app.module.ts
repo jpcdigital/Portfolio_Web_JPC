@@ -10,6 +10,11 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BarraNavegacionComponent } from './componentes/barra-navegacion/barra-navegacion.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { HysComponent } from './componentes/hys/hys.component';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,12 +23,17 @@ import { HysComponent } from './componentes/hys/hys.component';
     AcercaDeComponent,
     BarraNavegacionComponent,
     EducacionComponent,
-    HysComponent
+    HysComponent,
+    ProyectosComponent,
+    IniciarSesionComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
